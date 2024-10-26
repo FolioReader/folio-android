@@ -4,8 +4,13 @@ buildscript {
     apply from: 'versions.gradle'
 
     repositories {
+        mavenCentral()
+        mavenLocal()
         google()
         jcenter()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://repo.grails.org/grails/core/' }
+        maven { url 'https://plugins.gradle.org/m2/' }
     }
 
     dependencies {
@@ -32,7 +37,10 @@ allprojects {
         mavenLocal()
         google()
         jcenter()
+        mavenCentral()
         maven { url "https://jitpack.io" }
+        maven { url 'https://repo.grails.org/grails/core/' }
+        maven { url 'https://plugins.gradle.org/m2/' }
     }
 }
 
